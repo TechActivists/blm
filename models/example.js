@@ -35,8 +35,8 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING
     },
     reported_by: {
-      type: DataTypes.STRING  
-    }
+      type: DataTypes.STRING
+    },
 
   });
 
@@ -63,7 +63,7 @@ module.exports = function(sequelize, DataTypes) {
 
   });
 
-  return User;
+  return Victim;
 };
 
 
