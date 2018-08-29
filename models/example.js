@@ -26,7 +26,10 @@ module.exports = function(sequelize, DataTypes) {
     },
     media_resources: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
+      validate: {
+        isUrl: true
+      }
     },
     contact_person_name: {
       type: DataTypes.STRING
@@ -36,44 +39,48 @@ module.exports = function(sequelize, DataTypes) {
     },
     reported_by: {
       type: DataTypes.STRING
-    },
-
-  });
-
-  return Victim;
-
-  var User = sequelize.define("User", {
-    first_name:   {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    last_name: {
-      type: DataTypes.STRING, 
-      allowNull: false
-    },
-    email_address: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-   
-
-  });
-
-  return Victim;
-};
-
-
-
-
-
-
-User.associate = function(models) {
-  User.belongsTo(models.Victim, {
-    foreignKey: {
     }
+  },
+    {
+    timestamps: false
   });
+
+  return Victim;
+
+  // var User = sequelize.define("User", {
+  //   first_name:   {
+  //     type: DataTypes.STRING,
+  //     allowNull: false
+  //   },
+  //   last_name: {
+  //     type: DataTypes.STRING, 
+  //     allowNull: false
+  //   },
+  //   email_address: {
+  //     type: DataTypes.STRING,
+  //     allowNull: false
+  //   },
+  //   password: {
+  //     type: DataTypes.STRING,
+  //     allowNull: false
+  //   },
+  //  reported_victims: {
+  //    type: DataTypes.STRING
+  //  }
+  // });
+
+  // User.associate = function(models) {
+  //   User.belongsTo(models.Victim, {
+  //     foreignKey: {
+  //     }
+  //   });
+  // };
+
+  // return Victim;
 };
+
+
+
+
+
+
