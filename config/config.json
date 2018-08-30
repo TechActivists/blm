@@ -1,16 +1,16 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
-    "database": "blm_db",
-    "host": "localhost",
+    "username": "yc2nxrg9km1vtqc3",
+    "password": "mlknkbvc0skvmf5s",
+    "database": "k16haxjyp9wuhmcn",
+    "host": "lyl3nln24eqcxxot.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "root",
-    "database": "blm_db",
-    "host": "localhost",
+    "username": "yc2nxrg9km1vtqc3",
+    "password": "mlknkbvc0skvmf5s",
+    "database": "k16haxjyp9wuhmcn",
+    "host": "lyl3nln24eqcxxot.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "logging": false
   },

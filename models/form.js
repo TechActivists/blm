@@ -1,3 +1,4 @@
+module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define("User", {
     first_name:   {
       type: DataTypes.STRING,
@@ -27,4 +28,6 @@
     });
   };
 
-  return Victim;
+  return User;
+
+};
