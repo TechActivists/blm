@@ -26,7 +26,10 @@ module.exports = function(sequelize, DataTypes) {
     },
     media_resources: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
+      validate: {
+        isUrl: true
+      }
     },
     contact_person_name: {
       type: DataTypes.STRING
@@ -35,35 +38,45 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING
     },
     reported_by: {
-      type: DataTypes.STRING  
+      type: DataTypes.STRING
     }
-
+  },
+    {
+    timestamps: false
   });
 
   return Victim;
 
-  var User = sequelize.define("User", {
-    first_name:   {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    last_name: {
-      type: DataTypes.STRING, 
-      allowNull: false
-    },
-    email_address: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-   
+  // var User = sequelize.define("User", {
+  //   first_name:   {
+  //     type: DataTypes.STRING,
+  //     allowNull: false
+  //   },
+  //   last_name: {
+  //     type: DataTypes.STRING, 
+  //     allowNull: false
+  //   },
+  //   email_address: {
+  //     type: DataTypes.STRING,
+  //     allowNull: false
+  //   },
+  //   password: {
+  //     type: DataTypes.STRING,
+  //     allowNull: false
+  //   },
+  //  reported_victims: {
+  //    type: DataTypes.STRING
+  //  }
+  // });
 
-  });
+  // User.associate = function(models) {
+  //   User.belongsTo(models.Victim, {
+  //     foreignKey: {
+  //     }
+  //   });
+  // };
 
-  return User;
+  // return Victim;
 };
 
 
@@ -71,9 +84,3 @@ module.exports = function(sequelize, DataTypes) {
 
 
 
-User.associate = function(models) {
-  User.belongsTo(models.Victim, {
-    foreignKey: {
-    }
-  });
-};
