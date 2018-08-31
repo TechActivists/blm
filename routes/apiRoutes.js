@@ -11,7 +11,7 @@ module.exports = function(app) {
 // modal that allows the user to click on one victim
   app.get("/", function(req, res) {
   if (req.params.Victim) {
-    db.findOne({
+    db.Victim.findOne({
       where: {
         victimName: req.params.Victim
       }
@@ -20,19 +20,19 @@ module.exports = function(app) {
     });
   }
   else {
-    Character.findAll({}).then(function(dbVictim) {
+    Victim.findAll({}).then(function(dbVictim) {
       return res.json(dbVictim);
     });
   }
 });
 
 // form to enter data about a new victim 
-app.post("/victim/new", function(req, res) {
+app.post("/victims/new", function(req, res) {
   var victim = req.body;
 
   // var routeName = victim.name.replace(/\s+/g, "").toLowerCase();
 
-  db.create({
+  db.Victim.create({
     // routeName: routeName,
     first_name: victim.first_name,
     last_name: victim.last_name,
@@ -46,9 +46,6 @@ app.post("/victim/new", function(req, res) {
     reported_by: victim.reported_by
   });
 });
-
-
-
 
 
 
