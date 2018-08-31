@@ -3,17 +3,89 @@
     <div class="col-8 offset-2">
       <div class="card mt-4">
         <div class="card-body">
-          <h5 class="card-title">Example</h5>
+          {{!-- <h5 class="card-title">Example</h5>
           <p>
             <strong>ID</strong>: {{example.id}}</p>
           <p>
           <p>
             <strong>Text</strong>: {{example.text}}</p>
           <p>
-            <strong>Description:</strong> {{example.description}}</p>
+            <strong>Description:</strong> {{example.description}}</p> --}}
+
             <a href="/">← Back To Home</a>
+
+            <form class="create-form">
+
+              <div class="form-group">
+                <h2>Victim Information: </h2>
+                <p>Input the following information to the best of your ability:</p>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name">
+                <br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name">
+                <br>
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" name="gender">
+                <br>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city">
+                <br>
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state">
+                <br>
+                <label for="testimonial">Testimonial:</label>
+                <input type="text" id="testimonial" name="testimonial">
+                <br>
+                <label for="media_resources">Media Resources:</label>
+                <input type="text" id="media_resources" name="media_resources">
+              </div>
+
+              <div class="form-group">
+                <h2>Contact Information: </h2>
+                <p>Please share your contact information only if you are comfortable for a followup (optional):</p>
+                <label for="contact_person_name">Name:</label>
+                <input type="text" id="contact_person_name" name="contact_person_name">
+                <label for="contact_person_email">Email:</label>
+                <input type="text" id="contact_person_email" name="contact_person_email">
+              </div>
+
+              <button id="submit-btn" class="btn btn-success">Add Victim</button>
+            </form>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+{{!-- app.post("/victim/new", function(req, res) {
+  var victim = req.body;
+
+  // var routeName = victim.name.replace(/\s+/g, "").toLowerCase();
+
+  db.create({
+    // routeName: routeName,
+    first_name: victim.first_name,
+    last_name: victim.last_name,
+    gender: victim.gender,
+    city: victim.city,
+    state: victim.state,
+    testimonial: victim.testimonial,
+    media_resources: victim.media_resources,
+    contact_person_name: victim.contact_person_name,
+    contact_person_email: victim.contact_person_email,
+    reported_by: victim.reported_by
+  });
+}); --}}
+
+{{!-- router.post("/api/burgers", function(req, res) {
+  burger.create([
+    "burger_name", "devoured"
+  ], [
+    req.body.burger_name, req.body.devoured
+  ], function(data) {
+    //res.json({ id: data.insertId });
+    res.redirect("/");
+  });
+}); --}}

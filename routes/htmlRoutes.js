@@ -11,6 +11,10 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/example", function(req, res) {
+    res.render("example");
+  });
+
 
   // Load example page and pass in an example by id
   app.get("/victims/:id", function(req, res) {
