@@ -1,3 +1,54 @@
-.list-group-item {
+/* .list-group-item {
   line-height: 2.5;
+} */
+
+/* GLOBAL *****************************************************************************/
+body {
+    font-family: 'Neuton', serif;
+    font-size: 24px;
+    color: #111;
 }
+h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 40px;
+    color: #111;
+}
+h2 {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #68676A;
+}
+a {
+    border-bottom: 1px solid #F91E45;
+    color: #111;
+}
+a:hover {
+    color: #F91E45;
+    text-decoration: none;
+}
+/* TAGS *****************************************************************************/
+.tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 7px;
+}
+.greyTag {
+    color: #68676A;
+    border: 1px solid #68676A;
+}
+.greyTag:hover {
+    color: #111;
+    background-color: #68676A;
+}
+.scarletTag {
+    color: #F91E45;
+    border: 1px solid #F91E45;
+    border-radius: 2px;
+}
+.scarletTag:hover {
+    color: white;
+    background-color: #F91E45;
+}
+/* CARDS *****************************************************************************/

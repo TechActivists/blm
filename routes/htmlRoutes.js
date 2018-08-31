@@ -11,6 +11,11 @@ module.exports = function(app) {
     });
   });
 
+  // Load design page to test CSS
+  app.get("/design", function(req, res) {
+    res.render("design");
+      });
+
   app.get("/example", function(req, res) {
     res.render("example");
   });
