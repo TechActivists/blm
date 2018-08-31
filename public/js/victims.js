@@ -1,5 +1,5 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
-$(function() {
+
   
     $("#submit-btn").on("click", function(event) {
       // Make sure to preventDefault on a submit event.
@@ -18,17 +18,18 @@ $(function() {
       };
   
       // Send the POST request.
-      $.ajax("/victim/new", {
+      $.ajax("/victims/new", {
         type: "POST",
         data: newVictim
       }).then(
-        function() {
+        function(result) {
           console.log("created new victim");
+          console.log(result);
           // Reload the page to get the updated list
           location.reload();
         }
       );
     });
 
-  });
+
   
