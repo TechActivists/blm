@@ -1,5 +1,3 @@
-var db = require("../models");
-
 module.exports = function(app) {
   // retrieves all victims
   app.get("/", function(req, res) {
