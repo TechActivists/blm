@@ -7,11 +7,13 @@ body {
     font-family: 'Neuton', serif;
     font-size: 24px;
     color: #111;
+    background-color: #f2f2f1;
 }
 h1 {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 40px;
     color: #111;
+    margin-top: 30px;
 }
 h2 {
     font-size: 30px;
@@ -20,13 +22,27 @@ h2 {
     color: #68676A;
 }
 a {
-    border-bottom: 1px solid #F91E45;
+    border-bottom: 1px solid #3907CA;
     color: #111;
 }
 a:hover {
-    color: #F91E45;
+    color: #3907CA;
     text-decoration: none;
 }
+.uk-navbar-nav>li>a:hover {
+    color: #F8D239;
+}
+#bwlmNav, #bwlmFooter {
+    background-color: #111;
+}
+.uk-navbar-nav>li>a {
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+}
+#bwlmFooter {
+    margin-top: 100px;
+}
+
 /* TAGS *****************************************************************************/
 .tag {
     font-family: 'IBM Plex Mono', monospace;
@@ -43,12 +59,41 @@ a:hover {
     background-color: #68676A;
 }
 .scarletTag {
-    color: #F91E45;
-    border: 1px solid #F91E45;
+    color: #3907CA;
+    border: 1px solid #3907CA;
     border-radius: 2px;
 }
 .scarletTag:hover {
     color: white;
-    background-color: #F91E45;
+    background-color: #3907CA;
 }
+
 /* CARDS *****************************************************************************/
+#alexiaChristian:hover {
+    background-image: url(http://sharifwilliams.com/wor/women/on/the/rise/ga/wp-content/uploads/2017/04/Alexia-and-boys.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.victimCard:hover {
+    text-decoration: underline; /* only underline victim's name */
+}
+
+.victimCard img, .uk-card img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.victimCard img:hover, .uk-card img:hover {
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+.uk-card-body h3, .victimName, .victimDate {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    color: #111;
+    font-size: 18px;
+}
+.victimDate {
+    color: #68676A;
+    margin-top: 0;
+    font-size: 18px;
+}
