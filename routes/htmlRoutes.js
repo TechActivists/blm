@@ -20,6 +20,10 @@ module.exports = function(app) {
     res.render("example");
   });
 
+  app.get("/gmail_api", function(req, res) {
+    res.render("gmail_api");
+  });
+
 
   // Load example page and pass in an example by id
   app.get("/victims/:id", function(req, res) {
