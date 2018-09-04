@@ -69,15 +69,9 @@ a:hover {
 }
 
 /* CARDS *****************************************************************************/
-#alexiaChristian:hover {
-    background-image: url(http://sharifwilliams.com/wor/women/on/the/rise/ga/wp-content/uploads/2017/04/Alexia-and-boys.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .victimCard:hover {
     text-decoration: underline; /* only underline victim's name */
 }
-
 .victimCard img, .uk-card img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
