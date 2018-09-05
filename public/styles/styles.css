@@ -29,6 +29,9 @@ a:hover {
     color: #3907CA;
     text-decoration: none;
 }
+/* selection {
+    color:
+} */
 .uk-navbar-nav>li>a:hover {
     color: #F8D239;
 }
@@ -49,6 +52,14 @@ a:hover {
     font-size: 12px;
     text-transform: uppercase;
     padding: 7px;
+    color: #111;
+    border: #111;
+}
+.uk-card .tag {
+    padding: 7px 7px 7px 20px;
+}
+.uk-card .tag {
+    border: none;
 }
 .greyTag {
     color: #68676A;
@@ -58,36 +69,73 @@ a:hover {
     color: #111;
     background-color: #68676A;
 }
-.scarletTag {
+.blueTag {
     color: #3907CA;
     border: 1px solid #3907CA;
     border-radius: 2px;
 }
-.scarletTag:hover {
-    color: white;
+.blueTag:hover {
     background-color: #3907CA;
+    color: white;
+}
+.yellowTag {
+    color: #111;
+    /* border: #111; */
+    border: 3px solid #F8D239;
+    border-radius: 3px;
+}
+.yellowTag:hover {
+    background-color: #F8D239;
+    color: #111;
 }
 
 /* CARDS *****************************************************************************/
-.victimCard:hover {
-    text-decoration: underline; /* only underline victim's name */
-}
-.victimCard img, .uk-card img {
+.uk-card {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
-.victimCard img:hover, .uk-card img:hover {
+.uk-card:hover {
     -webkit-filter: none; /* Safari 6.0 - 9.0 */
     filter: none;
+}
+.uk-card:hover .victimName {
+    text-decoration: underline;
 }
 .uk-card-body h3, .victimName, .victimDate {
     font-family: 'IBM Plex Mono', monospace;
     margin: 0;
     color: #111;
-    font-size: 18px;
+    font-size: 16px;
 }
 .victimDate {
     color: #68676A;
-    margin-top: 0;
-    font-size: 18px;
+}
+.uk-card-media-bottom {
+    display: none;
+}
+.uk-card:hover .uk-card-body {
+    display: none;
+}
+.uk-card:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background-position: center;
+}
+/* VICTIM IMAGES ****************************************************************/
+#alexiaChristian:hover {
+    background-image: url(http://dev.rjactioncenter.org/wp-content/uploads/2016/05/68e4d585-d735-452a-b9ae-9c20279ef323_profile-300x225.jpg);
+}
+#michelleShirley:hover {
+    background-image: url(https://thumbs.mic.com/OGQ3OTQ4OTYwMSMvT3JfOGZyalBjV2ZaUmxET3NEc3J1cWJKajdvPS8xMXgyNjoxMjAzeDY0Ni84MDB4NDUwL2ZpbHRlcnM6Zm9ybWF0KGpwZWcpOnF1YWxpdHkoODApL2h0dHBzOi8vczMuYW1hem9uYXdzLmNvbS9wb2xpY3ltaWMtaW1hZ2VzL2JyZGhtMmcwbDRhZzNsYzZpcWx2czdwN2lxemNqd2p5bnY2eGZ3eG14bTVpZGx1eGF4OWlsdWR4Ynhtbm5wcmIuanBn.jpg);
+}
+#bettieJones:hover {
+    background-image: url(https://i2-prod.mirror.co.uk/incoming/article7085672.ece/ALTERNATES/s615/Bettie-Jones-and-Quintonio-LeGrier-shot-by-police.jpg);
+}
+#marqueshaMcmillan:hover {
+    background-image: url(https://i.kinja-img.com/gawker-media/image/upload/s--lUWkv4Ks--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/k42kvyevnjy4cmknhtbc.jpg);
+}
+#natashaMckenna:hover {
+    background-image: url(https://img.washingtonpost.com/news/local/wp-content/uploads/sites/2/2015/04/Mckennagrad.jpg);
 }
