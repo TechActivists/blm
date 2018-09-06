@@ -87,7 +87,7 @@ a:hover {
     color: #111;
 }
 
-/* CARDS *****************************************************************************/
+/* CARDS LIST *****************************************************************************/
 .uk-card:hover {
     -webkit-filter: none; /* Safari 6.0 - 9.0 */
     filter: none;
@@ -101,7 +101,7 @@ a:hover {
 .victimDate {
     color: #68676A;
 }
-.uk-card:hover .uk-card-body {
+.uk-card:hover .uk-card-body, .uk-card:hover .tag {
     opacity: 0;
 }
 .uk-card:hover {
@@ -112,11 +112,12 @@ a:hover {
     filter: grayscale(100%);
 }
 .uk-card .tag {
-    color: #3907CA;
+    color: #68676A;
     font-weight: 900;
+    background-color: #f2f2f1;
 }
 
-/* VICTIM IMAGES ****************************************************************/
+/* HOVER VICTIM IMAGES ****************************************************************/
 #alexiaChristian:hover {
     background-image: url(http://dev.rjactioncenter.org/wp-content/uploads/2016/05/68e4d585-d735-452a-b9ae-9c20279ef323_profile-300x225.jpg);
 }
@@ -132,3 +133,5 @@ a:hover {
 #natashaMckenna:hover {
     background-image: url(https://img.washingtonpost.com/news/local/wp-content/uploads/sites/2/2015/04/Mckennagrad.jpg);
 }
+
+/* VICTIM DETAIL CARDS ************************************************************/
