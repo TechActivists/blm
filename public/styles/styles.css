@@ -35,8 +35,12 @@ a:hover {
 .uk-navbar-nav>li>a:hover {
     color: #F8D239;
 }
-#bwlmNav, #bwlmFooter {
+#bwlmNav, #bwlmFooter, #bwlmNav a, #bwlmFooter a {
     background-color: #111;
+    border: none;
+}
+#bwlmFooter {
+    padding: 60px 0 60px 0;
 }
 .uk-navbar-nav>li>a {
     color: white;
@@ -47,19 +51,14 @@ a:hover {
 }
 
 /* TAGS *****************************************************************************/
-.tag {
+.tag, .victimTag {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 12px;
     text-transform: uppercase;
     padding: 7px;
     color: #111;
     border: #111;
-}
-.uk-card .tag {
-    padding: 7px 7px 7px 20px;
-}
-.uk-card .tag {
-    border: none;
+    text-align: center;
 }
 .greyTag {
     color: #68676A;
@@ -80,7 +79,6 @@ a:hover {
 }
 .yellowTag {
     color: #111;
-    /* border: #111; */
     border: 3px solid #F8D239;
     border-radius: 3px;
 }
@@ -90,16 +88,9 @@ a:hover {
 }
 
 /* CARDS *****************************************************************************/
-.uk-card {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-}
 .uk-card:hover {
     -webkit-filter: none; /* Safari 6.0 - 9.0 */
     filter: none;
-}
-.uk-card:hover .victimName {
-    text-decoration: underline;
 }
 .uk-card-body h3, .victimName, .victimDate {
     font-family: 'IBM Plex Mono', monospace;
@@ -110,19 +101,21 @@ a:hover {
 .victimDate {
     color: #68676A;
 }
-.uk-card-media-bottom {
-    display: none;
-}
 .uk-card:hover .uk-card-body {
-    display: none;
+    opacity: 0;
 }
 .uk-card:hover {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    background-position: center;
 }
+.uk-card .tag {
+    color: #3907CA;
+    font-weight: 900;
+}
+
 /* VICTIM IMAGES ****************************************************************/
 #alexiaChristian:hover {
     background-image: url(http://dev.rjactioncenter.org/wp-content/uploads/2016/05/68e4d585-d735-452a-b9ae-9c20279ef323_profile-300x225.jpg);
