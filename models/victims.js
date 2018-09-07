@@ -9,8 +9,8 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     age: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.INTEGER,
+      allowNull: true
     },
     gender: {
       type: DataTypes.STRING, 
