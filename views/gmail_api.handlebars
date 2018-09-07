@@ -1,12 +1,41 @@
-{{!-- <html lang="en">
-  <head>
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="1031789494944-u1d3rk494jnlikidj71cmfibi6daaom3.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="/js/gmail_api.js"></script>
-  </head>
-  <body>
-    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-    <a href="#" onclick="signOut();">Sign out</a>
-  </body>
-</html> --}}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+  
+
+d3.json("d3.json", function(data) {
+            var canvas = d3.select("body").append("svg")
+               .attr("width", 500)
+               .attr("height", 500)
+
+               canvas.selectAll("rect")
+                 .data(data)
+                 .enter()
+                   .append("rect")
+                   .attr("width", function(d) {
+                     var count = 0;
+                      for(var i = 0; i < d.length; i++){
+                  console.log(d.gender);
+                          count = d.gender[i];
+                        return count;
+                        console.log(count);
+
+                      }
+                      
+                  
+                   })
+                   .attr("y", function(d, i) {
+                     return i * 50;
+                   })
+                   .attr("fill", "blue");
+
+                
+         });
+
+
+</script>

@@ -25,8 +25,28 @@
         function(result) {
           console.log("created new victim");
           console.log(result);
+          console.log(data);
           // Reload the page to get the updated list
           location.reload();
+
+          d3.json(result), function(data) {
+            var canvas = d3.select("body").append("svg")
+               .attr("width", 500)
+               .attr("height", 500)
+    
+               canvas.selectAll("rect")
+                 .data(data)
+                 .enter()
+                   .append("rect")
+                   .attr("width", function(d) {
+                       return d.gender;
+                   })
+                   .attr("y", function(d, i) {
+                     return i * 50;
+                   })
+                   .attr("fill", "blue")
+         }
+
         }
       );
     });

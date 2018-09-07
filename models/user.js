@@ -17,10 +17,7 @@ module.exports = function(sequelize, DataTypes) {
     password: {
       type: DataTypes.STRING,
       allowNull: false
-    },
-   reported_victims: {
-     type: DataTypes.STRING
-   }
+    }
   });
 
   User.associate = function(models) {

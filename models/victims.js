@@ -8,6 +8,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING, 
       allowNull: false
     },
+    age: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
     gender: {
       type: DataTypes.STRING, 
       allowNull: false
@@ -31,6 +35,12 @@ module.exports = function(sequelize, DataTypes) {
         isUrl: true
       }
     },
+    officer_involved: {
+      type: DataTypes.STRING
+    },
+    police_department: {
+      type: DataTypes.STRING
+    },
     contact_person_name: {
       type: DataTypes.STRING
     },
@@ -45,8 +55,10 @@ module.exports = function(sequelize, DataTypes) {
     timestamps: false
   });
 
+
   return Victim;
 };
+
 
 
 
