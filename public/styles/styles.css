@@ -144,9 +144,19 @@ a:hover {
 .victimModal .victimName {
     font-size: 24px;
 }
-.officerLabel, .locationLabel {
+.officerLabel, .locationLabel, .sourceLabel {
     color: #3907CA;
 }
-.location {
-
+.victimModal img {
+    max-height: 300px;
+    text-align: center;
+}
+.victimSummary {
+    font-size: 20px;
+}
+.sourceSection a {
+    border-bottom: 2px solid #3907CA;
+}
+.sourceSection a:hover {
+    color: #3907CA;
 }
