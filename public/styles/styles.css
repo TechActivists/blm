@@ -7,7 +7,6 @@ body {
     font-family: 'Neuton', serif;
     font-size: 24px;
     color: #111;
-    background-color: #f2f2f1;
 }
 h1 {
     font-family: 'IBM Plex Mono', monospace;
@@ -29,9 +28,10 @@ a:hover {
     color: #3907CA;
     text-decoration: none;
 }
-/* selection {
-    color:
-} */
+::selection {
+    color: #111;
+    background-color: #F8D239;
+}
 .uk-navbar-nav>li>a:hover {
     color: #F8D239;
 }
