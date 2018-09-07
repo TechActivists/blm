@@ -7,33 +7,25 @@
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
   
+     d3.json("d3.json", function(data) {
 
-d3.json("d3.json", function(data) {
+       console.log(JSON.stringify(data));
             var canvas = d3.select("body").append("svg")
                .attr("width", 500)
                .attr("height", 500)
 
-               canvas.selectAll("rect")
+               canvas.selectAll("text")
                  .data(data)
                  .enter()
-                   .append("rect")
+                   .append("text")
                    .attr("width", function(d) {
-                     var count = 0;
-                      for(var i = 0; i < d.length; i++){
                   console.log(d.gender);
-                          count = d.gender[i];
-                        return count;
-                        console.log(count);
-
-                      }
-                      
-                  
+                        return  d.gender;
                    })
                    .attr("y", function(d, i) {
                      return i * 50;
                    })
                    .attr("fill", "blue");
-
                 
          });
 
