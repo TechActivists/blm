@@ -21,7 +21,7 @@ h2 {
     text-transform: uppercase;
     color: #68676A;
 }
-a {
+p > a {
     border-bottom: 1px solid #3907CA;
     color: #111;
 }
@@ -135,3 +135,18 @@ a:hover {
 }
 
 /* VICTIM DETAIL CARDS ************************************************************/
+.uk-modal-close-outside {
+    color: #F8D239;
+}
+.uk-modal-close-outside:hover {
+    color: #3907CA;
+}
+.victimModal .victimName {
+    font-size: 24px;
+}
+.officerLabel, .locationLabel {
+    color: #3907CA;
+}
+.location {
+
+}
