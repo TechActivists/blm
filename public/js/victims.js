@@ -21,6 +21,8 @@ function handleVictimFormSubmit(event) {
     contact_person_name: $("#contact_person_name").val().trim(),
     contact_person_email: $("#contact_person_email").val().trim()
   });
+
+  window.location.href = "/design";
 }
 
 function insertVictim(victimData) {
