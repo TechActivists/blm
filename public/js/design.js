@@ -9,7 +9,7 @@ $(document).ready(function() {
     getVictims();
 
     function getVictims() {
-      $.get("/api/victims", function(data) {
+      $.get("/", function(data) {
         console.log("Victims: ", data);
         victims = data;
         initializeRows();

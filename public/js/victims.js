@@ -73,7 +73,7 @@ function createVictimRow(victimData) {
   }
 
 function getVictims() {
-    $.get("/api/victims", function(data) {
+    $.get("/", function(data) {
         var rowsToAdd = [];
         for (var i = 0; i < data.length; i++) {
             rowsToAdd.push(createVictimRow(data[i]));
