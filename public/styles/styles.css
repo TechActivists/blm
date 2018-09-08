@@ -7,11 +7,10 @@ body {
     font-family: 'Neuton', serif;
     font-size: 24px;
     color: #111;
-    background-color: #f2f2f1;
 }
 h1 {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 40px;
+    font-size: 38px;
     color: #111;
     margin-top: 30px;
 }
@@ -29,11 +28,15 @@ a:hover {
     color: #3907CA;
     text-decoration: none;
 }
-/* selection {
-    color:
-} */
+::selection {
+    color: #111;
+    background-color: #F8D239;
+}
 .uk-navbar-nav>li>a:hover {
     color: #F8D239;
+}
+.intro {
+    color: #68676A;
 }
 #bwlmNav, #bwlmFooter, #bwlmNav a, #bwlmFooter a {
     background-color: #111;
@@ -144,9 +147,19 @@ a:hover {
 .victimModal .victimName {
     font-size: 24px;
 }
-.officerLabel, .locationLabel {
+.officerLabel, .locationLabel, .sourceLabel {
     color: #3907CA;
 }
-.location {
-
+.victimModal img {
+    max-height: 275px;
+    text-align: center;
+}
+.victimSummary {
+    font-size: 20px;
+}
+.sourceSection a:hover {
+    text-decoration: underline;
+}
+.uk-modal-footer {
+    padding: 3.75px 30px 7.5px 30px;
 }
