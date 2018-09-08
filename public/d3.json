@@ -117,19 +117,6 @@
     "reported_by": null
     },
     {
-    "id": 10,
-    "first_name": "asdf",
-    "last_name": "asdf",
-    "gender": "asdf",
-    "city": "sadf",
-    "state": "asfd",
-    "testimonial": "asf",
-    "media_resources": "asdfkj@fdns.com",
-    "contact_person_name": "",
-    "contact_person_email": "",
-    "reported_by": null
-    },
-    {
     "id": 11,
     "first_name": "Maybellin",
     "last_name": "Burgos",
@@ -167,31 +154,20 @@
     "contact_person_name": "May",
     "contact_person_email": "meepymay@gmail.com",
     "reported_by": null
+    }, 
+    {
+     "states": 7  
     },
     {
-    "id": 14,
-    "first_name": "dfasf",
-    "last_name": "sdfsa",
-    "gender": "dfsaf",
-    "city": "asdfs",
-    "state": "sdafsa",
-    "testimonial": "sdaf",
-    "media_resources": "dsfsaf@dfg.com",
-    "contact_person_name": "",
-    "contact_person_email": "",
-    "reported_by": null
+        "states": 2  
     },
     {
-    "id": 15,
-    "first_name": "dfasf",
-    "last_name": "sdfsa",
-    "gender": "dfsaf",
-    "city": "asdfs",
-    "state": "sdafsa",
-    "testimonial": "sdaf",
-    "media_resources": "dsfsaf@dfg.com",
-    "contact_person_name": "",
-    "contact_person_email": "",
-    "reported_by": null
+        "states": 3 
+    }, 
+    {
+        "states": 8
+    },
+    {
+        "states": 10
     }
     ]
