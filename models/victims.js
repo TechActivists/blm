@@ -8,6 +8,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING, 
       allowNull: false
     },
+    deceased_date: {
+        type: DataTypes.DATE, 
+        allowNull: false
+    },
     age: {
       type: DataTypes.INTEGER
     },
