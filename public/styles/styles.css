@@ -151,15 +151,15 @@ a:hover {
     color: #3907CA;
 }
 .victimModal img {
-    max-height: 300px;
+    max-height: 275px;
     text-align: center;
 }
 .victimSummary {
     font-size: 20px;
 }
-.sourceSection a {
-    border-bottom: 2px solid #3907CA;
-}
 .sourceSection a:hover {
-    color: #3907CA;
+    text-decoration: underline;
+}
+.uk-modal-footer {
+    padding: 3.75px 30px 7.5px 30px;
 }
