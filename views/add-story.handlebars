@@ -21,7 +21,7 @@
                 <input class="uk-input" id="last_name" name="last_name" type="text">
             </div>
             <div class="uk-margin">
-                <label class="uk-form-label" for="form-stacked-select">* Age (Number only):</label>
+                <label class="uk-form-label" for="form-stacked-select">* Age:</label>
                 <input class="uk-input" id="age" name="age" type="text">
             </div>
             <div class="uk-margin">
@@ -32,6 +32,10 @@
                     <option>Male</option>
                     <option>Nonbinary</option>
                 </select>
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">Link to Photo:</label>
+                <input class="uk-input" id="photo_img" name="photo_img" type="text">
             </div>
             <div class="uk-margin">
                 <label class="uk-form-label" for="form-stacked-select">* City:</label>
@@ -133,21 +137,3 @@
 
     </fieldset>
 </form>
-
-        
-
-{{!-- <p uk-margin>
-
-    <a id="js-modal-alert" class="uk-button uk-button-default" href="#">Alert</a>
-
-    <script>
-       UIkit.util.on('#js-modal-alert', 'click', function (e) {
-           e.preventDefault();
-           e.target.blur();
-           UIkit.modal.alert('UIkit alert!').then(function () {
-               console.log('Alert closed.')
-           });
-       });
-    </script>
-
-</p> --}}
