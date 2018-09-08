@@ -7,11 +7,10 @@ body {
     font-family: 'Neuton', serif;
     font-size: 24px;
     color: #111;
-    background-color: #f2f2f1;
 }
 h1 {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 40px;
+    font-size: 38px;
     color: #111;
     margin-top: 30px;
 }
@@ -29,11 +28,15 @@ a:hover {
     color: #3907CA;
     text-decoration: none;
 }
-/* selection {
-    color:
-} */
+::selection {
+    color: #111;
+    background-color: #F8D239;
+}
 .uk-navbar-nav>li>a:hover {
     color: #F8D239;
+}
+.intro {
+    color: #68676A;
 }
 #bwlmNav, #bwlmFooter, #bwlmNav a, #bwlmFooter a {
     background-color: #111;
@@ -118,6 +121,9 @@ a:hover {
 }
 
 /* HOVER VICTIM IMAGES ****************************************************************/
+#natashaMckenna:hover {
+    background-image: url(https://img.washingtonpost.com/news/local/wp-content/uploads/sites/2/2015/04/Mckennagrad.jpg);
+}
 #alexiaChristian:hover {
     background-image: url(http://dev.rjactioncenter.org/wp-content/uploads/2016/05/68e4d585-d735-452a-b9ae-9c20279ef323_profile-300x225.jpg);
 }
@@ -130,9 +136,6 @@ a:hover {
 #marqueshaMcmillan:hover {
     background-image: url(https://i.kinja-img.com/gawker-media/image/upload/s--lUWkv4Ks--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/k42kvyevnjy4cmknhtbc.jpg);
 }
-#natashaMckenna:hover {
-    background-image: url(https://img.washingtonpost.com/news/local/wp-content/uploads/sites/2/2015/04/Mckennagrad.jpg);
-}
 
 /* VICTIM DETAIL CARDS ************************************************************/
 .uk-modal-close-outside {
@@ -144,9 +147,50 @@ a:hover {
 .victimModal .victimName {
     font-size: 24px;
 }
-.officerLabel, .locationLabel {
+.officerLabel, .locationLabel, .sourceLabel {
     color: #3907CA;
 }
-.location {
+#natashaCard img {
+    max-height: 275px;
+    text-align: center;
+}
+.victimSummary {
+    font-size: 20px;
+}
+.sourceSection a:hover {
+    text-decoration: underline;
+}
+.uk-modal-footer {
+    padding: 3.75px 30px 7.5px 30px;
+}
 
+/* FORM ****************************************************************************************/
+.uk-legend {
+    color: #68676A;
+    border-bottom: 2px solid #F8D239;
+    padding-bottom: 5px;
+}
+.uk-form-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+}
+.uk-input, .uk-select, .uk-textarea {
+    border-color: #68676A;
+    color: #3907CA;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.uk-input:focus, .uk-select:focus, .uk-textarea:focus {
+    border-color: #3907CA;
+}
+.uk-button, .uk-button:visited, .uk-button:active, .uk-button:focus {
+    border-radius: 4px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #111;
+    background-color: #F8D239;
+}
+.uk-button:hover {
+    background-color: #111;
+    color: #F8D239;
 }
