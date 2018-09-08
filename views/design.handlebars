@@ -1,7 +1,8 @@
+<title>#BWLM - Home</title>
 <div class="uk-container">
     <h1 class="uk-text-center"># Black Women's Lives Matter</h1>
     <p class="intro uk-width-1-2@m uk-width-expand@m uk-align-center">
-        Why doesn't the United States keep track of those who succomb to state-sanctioned violence? Why is it so difficult to name the officer(s) responsible? Why don't you #SayHerName? #BWLM is a database of African Americans killed by police - with a specific focus on Black women. Its purpose is to shed light on those women left in the dark.
+        Why doesn't the United States keep track of those who succomb to state-sanctioned violence? Why is it so difficult to name the officer(s) responsible? Why don't you #SayHerName? #BWLM is a database of African Americans killed by police - with a specific focus on Black women. Its purpose is to bring light to those left in the dark.
     </p>
 
     <div class="uk-text-center"><a class='tag yellowTag' target="_blank" href="https://www.theguardian.com/us-news/ng-interactive/2015/jun/01/the-counted-police-killings-us-database">inspired by the counted <span uk-icon="arrow-right"></span></a></div>
@@ -11,7 +12,7 @@
     {{!-- begin victim grid --}}
     <div class="uk-grid-match uk-grid-small uk-child-width-expand@s" uk-grid>
         
-        {{!-- 1st victim --}}
+    {{!-- 1st victim card --}}
         <a href="#natashaCard" uk-toggle>
             <div>
                 <div id="natashaMckenna" class="uk-card uk-card-large uk-card-default uk-card-hover">
@@ -19,12 +20,12 @@
                         <p class="victimName">Natasha McKenna, 37</p>
                         <p class="victimDate">February 23, 2015</p>
                     </div>
-                    <div id="victimTag" class="tag">District of Columbia</div>
+                    <div id="victimTag" class="tag">Virginia</div>
                 </div>
             </div>
         </a>
-        {{!-- 1st victim modal --}}
-
+        
+    {{!-- 1st victim modal --}}
         <div id="natashaCard" class="victimModal" uk-modal>
             <div class="uk-modal-dialog">
                 <button class="uk-modal-close-outside" type="button" uk-close></button>
@@ -37,10 +38,10 @@
                     <p class="victimSummary">McKenna, who had schizophrenia, was tasered four times for being non-compliant with deputies. She later went into cardiac arrest due to a combination of the tasering, psychoactive medications and what the medical examiner controversially termed 'excited delirium'. Tasers were found to have played a role in her death, but no criminal charges were filed. The jail has since banned the use of Tasers.</p>
                 </div>
                 <div class="officerSection uk-modal-footer uk-text-left">
-                    <span class="officerLabel tag">Officer Involved:</span><span class="tag officer">LastName, Fairfax County PD</span>
+                    <span class="officerLabel tag">Officer(s) Involved:</span><span class="tag officer">Fairfax County PD</span>
                 </div>
                 <div class="locationSection uk-modal-footer uk-text-left">
-                    <span class="locationLabel tag">Location:</span><span class="tag location">District of Columbia</span>
+                    <span class="locationLabel tag">Location:</span><span class="tag location">Fairfax, Virginia</span>
                 </div>
                 <div class="sourceSection uk-modal-footer uk-text-left">
                     <span class="sourceLabel tag">Source:</span><a target="_blank" href="https://www.theguardian.com/us-news/ng-interactive/2015/jun/01/the-counted-police-killings-us-database#natasha-mckenna-109"><span class="source tag">Guardian</span></a><span uk-icon="arrow-right"></span>
@@ -48,213 +49,150 @@
             </div>
         </div>
 
+    {{!-- 2nd victim card --}}
+        <a href="#alexiaCard" uk-toggle>
+            <div>
+                <div id="alexiaChristian" class="uk-card uk-card-large uk-card-default uk-card-hover">
+                    <div  class="uk-card-body">
+                        <p class="victimName">Alexia Christian, 26</p>
+                        <p class="victimDate">April 30, 2015</p>
+                    </div>
+                    <div class="tag">Georgia</div>
+                </div>
+            </div>
+        </a>
 
-
-        <div>
-            <div id="alexiaChristian" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div  class="uk-card-body">
-                    <p class="victimName">Alexia Christian, 26</p>
-                    <p class="victimDate">April 30, 2015</p>
+    {{!-- 2nd victim modal --}}
+        <div id="alexiaCard" class="victimModal" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <span uk-icon="paint-bucket"></span>&nbsp;<h2 class="uk-modal-title victimName">Alexia Christian, 26</h2>
+                    <h3 class="victimDate">April 30, 2015</h3>
                 </div>
-                <div class="tag">Georgia</div>
-            </div>
-        </div>
-        <div>
-            <div id="michelleShirley" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Michelle Shirley, 39</p>
-                    <p class="victimDate">October 31, 2016</p>
+                <div class="uk-modal-body" uk-overflow-auto>
+                    <img class="uk-align-left" src="http://dev.rjactioncenter.org/wp-content/uploads/2016/05/68e4d585-d735-452a-b9ae-9c20279ef323_profile-300x225.jpg">Christian had been arrested for stealing a vehicle and was in the back of the police cruiser when she allegedly escaped her handcuffs, pulled a gun and fired three shots at the officers in the front seat. The officers got out and fired 10 shots at the car.</p>
                 </div>
-                <div class="tag">California</div>
-            </div>
-        </div>
-        <div>
-            <div id="bettieJones" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Bettie Jones, 55</p>
-                    <p class="victimDate">December 26, 2015</p>
+                <div class="officerSection uk-modal-footer uk-text-left">
+                    <span class="officerLabel tag">Officer(s) Involved:</span><span class="tag officer">FirstName LastName, Atlanta PD</span>
                 </div>
-                <div class="tag">Illinois</div>
-            </div>
-        </div>
-    
-        <div>
-            <div id="marqueshaMcmillan" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Marquesha McMillan, 21</p>
-                    <p class="victimDate">October 26, 2015</p>
+                <div class="locationSection uk-modal-footer uk-text-left">
+                    <span class="locationLabel tag">Location:</span><span class="tag location">Atlanta, Georgia</span>
                 </div>
-                <div class="tag">District of Columbia</div>
+                <div class="sourceSection uk-modal-footer uk-text-left">
+                    <span class="sourceLabel tag">Source:</span><a target="_blank" href="https://www.theguardian.com/us-news/ng-interactive/2015/jun/01/the-counted-police-killings-us-database#alexia-christian-371"><span class="source tag">Guardian</span></a><span uk-icon="arrow-right"></span>
+                </div>
             </div>
         </div>
 
-    </div> {{!-- closing victim grid --}}
-
-
-
-
-   {{!-- begin victim grid --}}
-    <div class="uk-grid-match uk-grid-small uk-child-width-expand@s" uk-grid>
-
-        <div>
-            <div id="natashaMckenna" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Natasha McKenna, 37</p>
-                    <p class="victimDate">February 23, 2015</p>
+    {{!-- 3rd victim card --}}
+        <a href="#michelleCard" uk-toggle>
+            <div>
+                <div id="michelleShirley" class="uk-card uk-card-large uk-card-default uk-card-hover">
+                    <div class="uk-card-body">
+                        <p class="victimName">Michelle Shirley, 39</p>
+                        <p class="victimDate">October 31, 2016</p>
+                    </div>
+                    <div class="tag">California</div>
                 </div>
-                <div class="tag">District of Columbia</div>
+            </div>
+        </a>
+
+    {{!-- 3rd victim modal --}}
+        <div id="michelleCard" class="victimModal" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <span uk-icon="paint-bucket"></span>&nbsp;<h2 class="uk-modal-title victimName">Michelle Shirley, 39</h2>
+                    <h3 class="victimDate">October 31, 2016</h3>
+                </div>
+                <div class="uk-modal-body" uk-overflow-auto>
+                    <img class="uk-align-left" src="https://thumbs.mic.com/OGQ3OTQ4OTYwMSMvT3JfOGZyalBjV2ZaUmxET3NEc3J1cWJKajdvPS8xMXgyNjoxMjAzeDY0Ni84MDB4NDUwL2ZpbHRlcnM6Zm9ybWF0KGpwZWcpOnF1YWxpdHkoODApL2h0dHBzOi8vczMuYW1hem9uYXdzLmNvbS9wb2xpY3ltaWMtaW1hZ2VzL2JyZGhtMmcwbDRhZzNsYzZpcWx2czdwN2lxemNqd2p5bnY2eGZ3eG14bTVpZGx1eGF4OWlsdWR4Ynhtbm5wcmIuanBn.jpg">Shirley was believed to be driving under the influence and was seen by police driving on the wrong side of the road. When officers tried to stop Shirley's car, she drove toward police before they opened fire, according to authorities. Shirley's family said she had previously been diagnosed with bipolar disorder.</p>
+                </div>
+                <div class="officerSection uk-modal-footer uk-text-left">
+                    <span class="officerLabel tag">Officer(s) Involved:</span><span class="tag officer">Torrance PD</span>
+                </div>
+                <div class="locationSection uk-modal-footer uk-text-left">
+                    <span class="locationLabel tag">Location:</span><span class="tag location">Torrance, California</span>
+                </div>
+                <div class="sourceSection uk-modal-footer uk-text-left">
+                    <span class="sourceLabel tag">Source:</span><a target="_blank" href="https://www.theguardian.com/us-news/ng-interactive/2015/jun/01/the-counted-police-killings-us-database#michelle-shirley-2016902"><span class="source tag">Guardian</span></a><span uk-icon="arrow-right"></span>
+                </div>
             </div>
         </div>
 
-        <div>
-            <div id="alexiaChristian" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div  class="uk-card-body">
-                    <p class="victimName">Alexia Christian, 26</p>
-                    <p class="victimDate">April 30, 2015</p>
+    {{!-- 4th victim card --}}
+        <a href="#bettieCard" uk-toggle>
+            <div>
+                <div id="bettieJones" class="uk-card uk-card-large uk-card-default uk-card-hover">
+                    <div class="uk-card-body">
+                        <p class="victimName">Bettie Jones, 55</p>
+                        <p class="victimDate">December 26, 2015</p>
+                    </div>
+                    <div class="tag">Illinois</div>
                 </div>
-                <div class="tag">Georgia</div>
             </div>
-        </div>
-        <div>
-            <div id="michelleShirley" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Michelle Shirley, 39</p>
-                    <p class="victimDate">October 31, 2016</p>
+        </a>
+
+    {{!-- 4th victim modal --}}
+        <div id="bettieCard" class="victimModal" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <span uk-icon="paint-bucket"></span>&nbsp;<h2 class="uk-modal-title victimName">Bettie Jones, 55</h2>
+                    <h3 class="victimDate">December 26, 2015</h3>
                 </div>
-                <div class="tag">California</div>
-            </div>
-        </div>
-        <div>
-            <div id="bettieJones" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Bettie Jones, 55</p>
-                    <p class="victimDate">December 26, 2015</p>
+                <div class="uk-modal-body" uk-overflow-auto>
+                    <img class="uk-align-left" src="https://i2-prod.mirror.co.uk/incoming/article7085672.ece/ALTERNATES/s615/Bettie-Jones-and-Quintonio-LeGrier-shot-by-police.jpg">Jones was accidentally shot by police while she tried to help a neighbor deal with a domestic disturbance involving his son. The neighbor, Antonio LeGrier, said he called the police when his son tried to break his door down early in the morning, and that Jones was attempting to direct officers when they arrived. LeGrier's son, Quintonio, was also fatally shot by police.</p>
                 </div>
-                <div class="tag">Illinois</div>
-            </div>
-        </div>
-    
-        <div>
-            <div id="marqueshaMcmillan" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Marquesha McMillan, 21</p>
-                    <p class="victimDate">October 26, 2015</p>
+                <div class="officerSection uk-modal-footer uk-text-left">
+                    <span class="officerLabel tag">Officer(s) Involved:</span><span class="tag officer">Chicago PD</span>
                 </div>
-                <div class="tag">District of Columbia</div>
-            </div>
-        </div>
-
-    </div> {{!-- closing victim grid --}}
-
-
-
-
-    {{!-- begin victim grid --}}
-    <div class="uk-grid-match uk-grid-small uk-child-width-expand@s" uk-grid>
-
-        <div>
-            <div id="natashaMckenna" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Natasha McKenna, 37</p>
-                    <p class="victimDate">February 23, 2015</p>
+                <div class="locationSection uk-modal-footer uk-text-left">
+                    <span class="locationLabel tag">Location:</span><span class="tag location">Chicago, Illinois</span>
                 </div>
-                <div class="tag">District of Columbia</div>
+                <div class="sourceSection uk-modal-footer uk-text-left">
+                    <span class="sourceLabel tag">Source:</span><a target="_blank" href="https://www.theguardian.com/us-news/ng-interactive/2015/jun/01/the-counted-police-killings-us-database#bettie-jones-1145"><span class="source tag">Guardian</span></a><span uk-icon="arrow-right"></span>
+                </div>
             </div>
         </div>
 
-        <div>
-            <div id="alexiaChristian" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div  class="uk-card-body">
-                    <p class="victimName">Alexia Christian, 26</p>
-                    <p class="victimDate">April 30, 2015</p>
+    {{!-- 5th victim card --}}
+        <a href="#marqueshaCard" uk-toggle>
+            <div>
+                <div id="marqueshaMcmillan" class="uk-card uk-card-large uk-card-default uk-card-hover">
+                    <div class="uk-card-body">
+                        <p class="victimName">Marquesha McMillan, 21</p>
+                        <p class="victimDate">October 26, 2015</p>
+                    </div>
+                    <div class="tag">District of Columbia</div>
                 </div>
-                <div class="tag">Georgia</div>
             </div>
-        </div>
-        <div>
-            <div id="michelleShirley" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Michelle Shirley, 39</p>
-                    <p class="victimDate">October 31, 2016</p>
+        </a>
+
+    {{!-- 5th victim modal --}}
+        <div id="marqueshaCard" class="victimModal" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <span uk-icon="paint-bucket"></span>&nbsp;<h2 class="uk-modal-title victimName">Marquesha McMillan, 21</h2>
+                    <h3 class="victimDate">October 26, 2015</h3>
                 </div>
-                <div class="tag">California</div>
-            </div>
-        </div>
-        <div>
-            <div id="bettieJones" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Bettie Jones, 55</p>
-                    <p class="victimDate">December 26, 2015</p>
+                <div class="uk-modal-body" uk-overflow-auto>
+                    <img class="uk-align-left" src="https://i.kinja-img.com/gawker-media/image/upload/s--lUWkv4Ks--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/k42kvyevnjy4cmknhtbc.jpg">Officers responded to a robbery in progress at a liquor store, police said. McMillan shot at reponding officers in the parking lot near the liquor store and was killed when officers returned fire, according to authorities.</p>
                 </div>
-                <div class="tag">Illinois</div>
-            </div>
-        </div>
-    
-        <div>
-            <div id="marqueshaMcmillan" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Marquesha McMillan, 21</p>
-                    <p class="victimDate">October 26, 2015</p>
+                <div class="officerSection uk-modal-footer uk-text-left">
+                    <span class="officerLabel tag">Officer(s) Involved:</span><span class="tag officer">Washington Metro PD</span>
                 </div>
-                <div class="tag">District of Columbia</div>
+                <div class="locationSection uk-modal-footer uk-text-left">
+                    <span class="locationLabel tag">Location:</span><span class="tag location">Washington, Disctrict of Columbia</span>
+                </div>
+                <div class="sourceSection uk-modal-footer uk-text-left">
+                    <span class="sourceLabel tag">Source:</span><a target="_blank" href="https://www.theguardian.com/us-news/ng-interactive/2015/jun/01/the-counted-police-killings-us-database#marquesha-mcmillan-958"><span class="source tag">Guardian</span></a><span uk-icon="arrow-right"></span>
+                </div>
             </div>
         </div>
 
-    </div> {{!-- closing victim grid --}}
-
-
-
-
-    {{!-- begin victim grid --}}
-    <div class="uk-grid-match uk-grid-small uk-child-width-expand@s" uk-grid>
-
-        <div>
-            <div id="natashaMckenna" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Natasha McKenna, 37</p>
-                    <p class="victimDate">February 23, 2015</p>
-                </div>
-                <div class="tag">District of Columbia</div>
-            </div>
-        </div>
-
-        <div>
-            <div id="alexiaChristian" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div  class="uk-card-body">
-                    <p class="victimName">Alexia Christian, 26</p>
-                    <p class="victimDate">April 30, 2015</p>
-                </div>
-                <div class="tag">Georgia</div>
-            </div>
-        </div>
-        <div>
-            <div id="michelleShirley" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Michelle Shirley, 39</p>
-                    <p class="victimDate">October 31, 2016</p>
-                </div>
-                <div class="tag">California</div>
-            </div>
-        </div>
-        <div>
-            <div id="bettieJones" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Bettie Jones, 55</p>
-                    <p class="victimDate">December 26, 2015</p>
-                </div>
-                <div class="tag">Illinois</div>
-            </div>
-        </div>
-    
-        <div>
-            <div id="marqueshaMcmillan" class="uk-card uk-card-large uk-card-default uk-card-hover">
-                <div class="uk-card-body">
-                    <p class="victimName">Marquesha McMillan, 21</p>
-                    <p class="victimDate">October 26, 2015</p>
-                </div>
-                <div class="tag">District of Columbia</div>
-            </div>
-        </div>
 
     </div> {{!-- closing victim grid --}}
 
