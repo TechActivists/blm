@@ -9,14 +9,14 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     deceased_date: {
-        type: DataTypes.DATE, 
+        type: DataTypes.STRING, 
         allowNull: false
     },
     age: {
       type: DataTypes.INTEGER
     },
     gender: {
-      type: DataTypes.STRING, 
+      type: DataTypes.STRING,
       allowNull: false
     },
     city: {
