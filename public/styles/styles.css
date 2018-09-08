@@ -121,6 +121,9 @@ a:hover {
 }
 
 /* HOVER VICTIM IMAGES ****************************************************************/
+#natashaMckenna:hover {
+    background-image: url(https://img.washingtonpost.com/news/local/wp-content/uploads/sites/2/2015/04/Mckennagrad.jpg);
+}
 #alexiaChristian:hover {
     background-image: url(http://dev.rjactioncenter.org/wp-content/uploads/2016/05/68e4d585-d735-452a-b9ae-9c20279ef323_profile-300x225.jpg);
 }
@@ -132,9 +135,6 @@ a:hover {
 }
 #marqueshaMcmillan:hover {
     background-image: url(https://i.kinja-img.com/gawker-media/image/upload/s--lUWkv4Ks--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/k42kvyevnjy4cmknhtbc.jpg);
-}
-#natashaMckenna:hover {
-    background-image: url(https://img.washingtonpost.com/news/local/wp-content/uploads/sites/2/2015/04/Mckennagrad.jpg);
 }
 
 /* VICTIM DETAIL CARDS ************************************************************/
@@ -150,7 +150,7 @@ a:hover {
 .officerLabel, .locationLabel, .sourceLabel {
     color: #3907CA;
 }
-.victimModal img {
+#natashaCard img {
     max-height: 275px;
     text-align: center;
 }

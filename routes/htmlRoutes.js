@@ -16,8 +16,8 @@ module.exports = function(app) {
     res.render("design");
       });
 
-  app.get("/example", function(req, res) {
-    res.render("example");
+  app.get("/add-story", function(req, res) {
+    res.render("add-story");
   });
 
   app.get("/gmail_api", function(req, res) {
