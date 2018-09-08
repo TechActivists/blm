@@ -23,6 +23,7 @@ module.exports = function(sequelize, DataTypes) {
   User.associate = function(models) {
     User.belongsTo(models.Victim, {
       foreignKey: {
+        allowNull: false
       }
     });
   };

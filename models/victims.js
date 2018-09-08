@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     age: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: true
     },
     gender: {
       type: DataTypes.STRING, 
@@ -27,6 +27,12 @@ module.exports = function(sequelize, DataTypes) {
     testimonial: {
       type: DataTypes.TEXT,
       allowNull: false
+    },
+    photo_img: {
+      type: DataTypes.STRING,
+      validate: {
+        isUrl: true
+      }
     },
     media_resources: {
       type: DataTypes.STRING,
