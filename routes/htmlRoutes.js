@@ -2,7 +2,7 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Load index page
-  app.get("/", function(req, res) {
+  app.get("/api/victims", function(req, res) {
     db.Victim.findAll({}).then(function(dbVictim) {
       res.render("index", {
         msg: "Welcome!",
