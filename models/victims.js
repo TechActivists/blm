@@ -8,11 +8,15 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING, 
       allowNull: false
     },
+    deceased_date: {
+        type: DataTypes.STRING, 
+        allowNull: false
+    },
     age: {
       type: DataTypes.INTEGER
     },
     gender: {
-      type: DataTypes.STRING, 
+      type: DataTypes.STRING,
       allowNull: false
     },
     city: {
