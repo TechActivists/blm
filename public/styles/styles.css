@@ -163,3 +163,34 @@ a:hover {
 .uk-modal-footer {
     padding: 3.75px 30px 7.5px 30px;
 }
+
+/* FORM ****************************************************************************************/
+.uk-legend {
+    color: #68676A;
+    border-bottom: 2px solid #F8D239;
+    padding-bottom: 5px;
+}
+.uk-form-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+}
+.uk-input, .uk-select, .uk-textarea {
+    border-color: #68676A;
+    color: #3907CA;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.uk-input:focus, .uk-select:focus, .uk-textarea:focus {
+    border-color: #3907CA;
+}
+.uk-button, .uk-button:visited, .uk-button:active, .uk-button:focus {
+    border-radius: 4px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #111;
+    background-color: #F8D239;
+}
+.uk-button:hover {
+    background-color: #111;
+    color: #F8D239;
+}

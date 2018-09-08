@@ -1,270 +1,141 @@
-<div class="container">
-  <div class="row">
-    <div class="col-8 offset-2">
-      <div class="card mt-4">
-        <div class="card-body">
+<h1 class="uk-text-center">Add a Story:</h1>
+<p class="intro uk-width-1-2@m uk-width-expand@m uk-align-center">
+    Thank you for taking the time to tell this important story. Together, we can bring awareness and bring light to those left in the dark. Please fill in as much information as you can.
+</p>
 
-          {{!-- <h5 class="card-title">Example</h5>
-          <p>
-            <strong>ID</strong>: {{example.id}}</p>
-          <p>
-          <p>
-            <strong>Text</strong>: {{example.text}}</p>
-          <p>
-            <strong>Description:</strong> {{example.description}}</p> --}}
+<div class="uk-text-center uk-align-center"><span uk-icon="paint-bucket"></span></div>
 
-            <a href="/">← Back To Home</a>
-            <br>
-            <br>
+{{!-- begin form --}}
+<form class="uk-width-1-2@m uk-width-expand@m uk-align-center uk-form-stacked">
+    <fieldset class="uk-fieldset">
 
-            <form class="create-form">
-              <fieldset class="uk-fieldset">
-                <h1>
-                  Report:
-                </h1>
-                <div class="form-group">
-                  <h2>
-                    Victim Information:
-                  </h2>
-                  <p>
-                    Input the following information to the best of your ability:
-                  </p>
-                  <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">First Name:</label> 
-                    <input class="uk-input uk-form-danger uk-form-width-large" id="first_name" name="first_name" placeholder="e.g. Jane" type="text">
-                  </div>
-                  <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Last Name:</label>
-                    <input class="uk-input uk-form-danger uk-form-width-large" id="last_name" name="last_name" placeholder="e.g. Doe" type="text">
-                  </div>
-                  <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Age:</label>
-                    <input class="uk-input uk-form-danger uk-form-width-large" id="age" name="age" placeholder="e.g. 34" type="text">
-                  </div>
-                  <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Gender:</label>
-                    <select class="uk-select uk-form-danger uk-form-width-large" id="gender" name="gender">
-                      <option>
-                        Female
-                      </option>
-                      <option>
-                        Male
-                      </option>
-                      <option>
-                        Nonbinary
-                      </option>
-                    </select>
-                  </div>
-                  <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">City:</label>
-                    <input class="uk-input uk-form-danger uk-form-width-large" id="city" name="city" placeholder="e.g. Atlanta" type="text">
-                  </div>
-                  <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">State:</label>
-                      <select class="uk-select uk-form-danger uk-form-width-large" id="state" name="state">
-                        <option value="">
-                          Please select...
-                        </option>
-                        <option value="AL">
-                          Alabama
-                        </option>
-                        <option value="AK">
-                          Alaska
-                        </option>
-                        <option value="AZ">
-                          Arizona
-                        </option>
-                        <option value="AR">
-                          Arkansas
-                        </option>
-                        <option value="CA">
-                          California
-                        </option>
-                        <option value="CO">
-                          Colorado
-                        </option>
-                        <option value="CT">
-                          Connecticut
-                        </option>
-                        <option value="DE">
-                          Delaware
-                        </option>
-                        <option value="FL">
-                          Florida
-                        </option>
-                        <option value="GA">
-                          Georgia
-                        </option>
-                        <option value="HI">
-                          Hawaii
-                        </option>
-                        <option value="ID">
-                          Idaho
-                        </option>
-                        <option value="IL">
-                          Illinois
-                        </option>
-                        <option value="IN">
-                          Indiana
-                        </option>
-                        <option value="IA">
-                          Iowa
-                        </option>
-                        <option value="KS">
-                          Kansas
-                        </option>
-                        <option value="KY">
-                          Kentucky
-                        </option>
-                        <option value="LA">
-                          Louisiana
-                        </option>
-                        <option value="ME">
-                          Maine
-                        </option>
-                        <option value="MD">
-                          Maryland
-                        </option>
-                        <option value="MA">
-                          Massachusetts
-                        </option>
-                        <option value="MI">
-                          Michigan
-                        </option>
-                        <option value="MN">
-                          Minnesota
-                        </option>
-                        <option value="MS">
-                          Mississippi
-                        </option>
-                        <option value="MO">
-                          Missouri
-                        </option>
-                        <option value="MT">
-                          Montana
-                        </option>
-                        <option value="NE">
-                          Nebraska
-                        </option>
-                        <option value="NV">
-                          Nevada
-                        </option>
-                        <option value="NH">
-                          New Hampshire
-                        </option>
-                        <option value="NJ">
-                          New Jersey
-                        </option>
-                        <option value="NM">
-                          New Mexico
-                        </option>
-                        <option value="NY">
-                          New York
-                        </option>
-                        <option value="NC">
-                          North Carolina
-                        </option>
-                        <option value="ND">
-                          North Dakota
-                        </option>
-                        <option value="OH">
-                          Ohio
-                        </option>
-                        <option value="OK">
-                          Oklahoma
-                        </option>
-                        <option value="OR">
-                          Oregon
-                        </option>
-                        <option value="PA">
-                          Pennsylvania
-                        </option>
-                        <option value="RI">
-                          Rhode Island
-                        </option>
-                        <option value="SC">
-                          South Carolina
-                        </option>
-                        <option value="SD">
-                          South Dakota
-                        </option>
-                        <option value="TN">
-                          Tennessee
-                        </option>
-                        <option value="TX">
-                          Texas
-                        </option>
-                        <option value="UT">
-                          Utah
-                        </option>
-                        <option value="VT">
-                          Vermont
-                        </option>
-                        <option value="VA">
-                          Virginia
-                        </option>
-                        <option value="WA">
-                          Washington
-                        </option>
-                        <option value="WV">
-                          West Virginia
-                        </option>
-                        <option value="WI">
-                          Wisconsin
-                        </option>
-                        <option value="WY">
-                          Wyoming
-                        </option>
+        <div class="form-group">
+            <h2 class="uk-legend">About the Victim</h2>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">* First Name:</label> 
+                <input class="uk-input" id="first_name" name="first_name" type="text">
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">* Last Name:</label>
+                <input class="uk-input" id="last_name" name="last_name" type="text">
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">* Age (Number only):</label>
+                <input class="uk-input" id="age" name="age" type="text">
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">* Gender:</label>
+                <select class="uk-select" id="gender" name="gender">
+                    <option>Select gender...</option>
+                    <option>Female</option>
+                    <option>Male</option>
+                    <option>Nonbinary</option>
+                </select>
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">* City:</label>
+                <input class="uk-input" id="city" name="city" type="text">
+            </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">* State:</label>
+                    <select class="uk-select" id="state" name="state">
+                        {{!-- state selector options --}}
+                        <option value="">Select state...</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
                       </select> 
-                  </div>
-                  <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Testimonial:</label>
-                    <textarea class="uk-textarea uk-form-danger uk-form-width-large" rows="5" id="testimonial" name="testimonial" placeholder="Write your story here..."></textarea>
-                  </div>
-                  <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Media Resources:</label>
-                    <input class="uk-input uk-form-danger uk-form-width-large" id="media_resources" name="media_resources" placeholder="" type="text">
-                  </div>
-                  <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Officer Involved:</label>
-                    <input class="uk-input uk-form-width-large" id="officer_involved" name="officer_involved" placeholder="" type="text">
-                  </div>
-                  <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Police Department:</label>
-                    <input class="uk-input uk-form-width-large" id="police_department" name="police_department" placeholder="" type="text">
-                  </div>
-
-                <div class="form-group">
-                  <h2>
-                    Contact Information:
-                  </h2>
-                  <p>
-                    Please share your contact information only if you are comfortable for a followup (optional):
-                  </p>
-                  <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Name:</label> 
-                    <input class="uk-input uk-form-width-large" id="contact_person_name" name="contact_person_name" type="text">
-                  </div> 
-                  <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Email:</label> 
-                    <input class="uk-input uk-form-width-large" id="contact_person_email" name="contact_person_email" type="text">
-                  </div>
                 </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">* Testimonial:</label>
+                <textarea class="uk-textarea" rows="5" id="testimonial" name="testimonial" placeholder="Please be as detailed as possible..."></textarea>
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">Media Resource (URL):</label>
+                <input class="uk-input" id="media_resources" name="media_resources" type="text">
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">Officer Involved (First and Last Name):</label>
+                <input class="uk-input" id="officer_involved" name="officer_involved" type="text">
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">Police Department:</label>
+                <input class="uk-input" id="police_department" name="police_department" type="text">
+            </div>
+
+            <div class="uk-text-center uk-align-center"><span uk-icon="paint-bucket"></span></div>
+
+            {{!-- begin contact info section --}}
+            <div class="form-group contactInfo">
+                <h2 class="uk-legend">Your Contact Information (Optional)</h2>
+                <p class="intro">
+                    This is not required, but could help hold those accountable. Please share your contact information only if you are comfortable.
+                </p>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">Full Name:</label> 
+                <input class="uk-input" id="contact_person_name" name="contact_person_name" type="text">
+            </div> 
+                <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">Email:</label> 
+                <input class="uk-input" id="contact_person_email" name="contact_person_email" type="text">
+                </div>
+            </div>
                 
-                <button class="uk-button uk-button-primary" id="submit-btn">Add Victim</button>
-                <br>
-                <br>
+        <button class="uk-button uk-button-primary" id="submit-btn">Add Story</button>
 
-              </fieldset>
-            </form>
+    </fieldset>
+</form>
 
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+        
 
-<p uk-margin>
+{{!-- <p uk-margin>
 
     <a id="js-modal-alert" class="uk-button uk-button-default" href="#">Alert</a>
 
@@ -278,4 +149,4 @@
        });
     </script>
 
-</p>
+</p> --}}
